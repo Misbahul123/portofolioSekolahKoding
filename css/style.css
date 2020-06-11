@@ -4,6 +4,7 @@
     /* font-family: sans-serif; */
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
+    max-width: 100% !important;
 }
 a{
     text-decoration: none;
@@ -40,11 +41,15 @@ img{
 }
 
 .kolom_3{
-    width: 300px; float: left;
+    /* 300/960 *100; */
+    /* width: 300px;  */
+    width: 31%;    
+
+    float: left;
 }
 
 .kolom_3_tengah{
-    margin: 0 30px;
+    margin: 0 3%;
 }
 
 #logo{
@@ -59,6 +64,12 @@ img{
     line-height: 50px;
     font-size: 20px;
     margin-top: 20px;
+}
+
+#menu-text{
+    display: none;
+    color: white;
+    padding-left: 10px;
 }
 
 #menu a{
@@ -148,8 +159,8 @@ h2{
 
 .kolom_2{
     float: left;
-    width: 450px;
-    margin: 0 15px;
+    width: 46%;
+    margin: 0 1.5%;
 }
 
 #ketiga h2{
@@ -195,11 +206,11 @@ input[type="submit"]:hover,.panah_box:hover{
     background-color:  #0074b9;
     text-align: center;
     font-size: 30px;
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
 #karya_box{
-    width: 800px;
+    width: 83%;
     margin: 0 20px;
 }
 
@@ -213,7 +224,7 @@ input[type="submit"]:hover,.panah_box:hover{
 }
 
 #karya_box_kr{
-    width: 280px;
+    width: 29%;
     padding: 30px 10px 0 10px;
     height: 320px;
     background-color:  #0074b9;
@@ -248,4 +259,132 @@ input[type="submit"]:hover,.panah_box:hover{
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+#nav-icon{
+    display: none;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width:1024px){
+    #box{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    .setiap_karya_gambar p{
+        position: static;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+        color: white;
+        background-color: transparent;
+        line-height: normal;
+    }
+    #pertama{
+        height: auto;
+    }
+
+  
+    /* uuntuk halaman folio */
+    #karya_box,  #karya_box_kr, #karya_box_knn{
+        float: none;
+        width: 98%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #karya_box img{
+        width: 100%;
+    }
+    #karya_box_kr{
+        padding: 2%;
+        width: 86%;
+    }
+
+    .panah_box {
+        position: fixed;
+        top: 30%;
+    }
+    .panah_box_kr{
+        left:0%;
+    }
+
+    .panah_box_knn{
+        right: 0%;
+    }
+
+    #karya_lain img{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width:480px){ 
+    #pertama{
+        background-attachment: fixed;
+    }
+    #menu{
+        position: relative;
+    }
+
+    #nav-icon{ 
+        display: block;
+        height: 30px;
+        width: 30px;
+        position: absolute; 
+        top: 10px;
+        right: 10px;
+    }
+    .kolom_3 , .kolom_2{
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #box{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    h2{
+        font-size: 25px;
+    }
+    #kedua img{
+        width: 200px;
+        height: 200px;
+    }
+    #kedua p{
+        font-size: 18px;
+    }
+    #kedua .kolom_3{
+        margin: 10px auto;
+    }
+    /* nav menu */
+
+    #menu .content{
+        max-height: 0;
+        overflow: hidden;
+    }
+    #menu-text{
+        display: block;
+    }
+
+    .menu-open{
+        max-height: 100% !important;
+    }
+
+    #menu{
+        height: auto;
+        font-size: 15px;
+    }
+
+    #menu a{
+        border-bottom: 1px solid white;
+    }
+
 }

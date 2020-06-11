@@ -6,16 +6,26 @@
     <title>Portofolio </title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script>
+
+        function toggleMenu(){
+            var menu = document.getElementById('menu3');
+            menu.classList.toggle('menu-open');
+        }
+
+    </script> 
 </head>
 <body>
     <div style="padding-top: 20px;"></div>
     <header>
         <img src="assets/logo.png" id="logo" alt="">
         <div id="menu">
-            <div class="content">
-                <a href="#pertama" class="kolom_3">Hallo</a>
-                <a href="#kedua" class="kolom_3 kolom_3_tengah">karya</a>
-                <a href="#ketiga" class="kolom_3">kontak</a>
+            <img src="assets/logo.png" id="nav-icon" alt="" onclick="toggleMenu();">
+            <div id="menu-text" onclick="toggleMenu();">Menu</div>
+            <div class="content" id="menu3">
+                <a href="#pertama" class="kolom_3"onclick="return smooth">Hallo</a>
+                <a href="#kedua" class="kolom_3 kolom_3_tengah"onclick="return smooth">karya</a>
+                <a href="#ketiga" class="kolom_3" onclick="return smooth">kontak</a>
             </div>
         </div>
     </header>
@@ -24,7 +34,7 @@
 
 
     <div class="content">
-        <div class="panah_box"> < </div>
+        <div class="panah_box panah_box_kr"> < </div>
 
             <div id="karya_box">
 
@@ -34,12 +44,12 @@
                 </div>
 
                 <div id="karya_box_knn">
-                   <img src="assets/logo.png" alt="">
+                   <img src="assets/bg.jpg" alt="">
                 </div>
 
             </div>
 
-        <div class="panah_box"> > </div>
+        <div class="panah_box panah_box_knn"> > </div>
 
 
         <div class="clear"></div>
