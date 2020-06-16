@@ -191,7 +191,7 @@ input[type="submit"]:hover,.panah_box:hover{
 }
 
 #ketiga iframe{
-    max-width: 450px;
+    max-width: 420px;
 }
 
 
@@ -263,6 +263,13 @@ input[type="submit"]:hover,.panah_box:hover{
 
 #nav-icon{
     display: none;
+}
+
+
+.error{
+    color:red;
+    margin-top: -5px;
+    margin-left: 15px;
 }
 
 

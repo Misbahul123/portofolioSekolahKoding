@@ -25,9 +25,9 @@
                 <img src="assets/logo.png" id="nav-icon" alt="" onclick="toggleMenu();">
                 <div id="menu-text" onclick="toggleMenu();">Menu</div>
                 <div class="content" id="menu3">
-                    <a href="#pertama" class="kolom_3"onclick="return smooth">Hallo</a>
-                    <a href="#kedua" class="kolom_3 kolom_3_tengah"onclick="return smooth">karya</a>
-                    <a href="#ketiga" class="kolom_3" onclick="return smooth">kontak</a>
+                    <a href="#pertama" class="kolom_3">Hallo</a>
+                    <a href="#kedua" class="kolom_3 kolom_3_tengah"onclick="return smoothScroll('kedua')">karya</a>
+                    <a href="#ketiga" class="kolom_3" onclick="return smoothScroll('ketiga')">kontak</a>
                 </div>
             </div>
         </header>
@@ -83,7 +83,7 @@
             <h2>Kontak saya</h2>
 
             <div class="kolom_2">
-                <form action="">
+                <form action="" novalidate onsubmit="return validasi(this)">
                     <input type="text" name="nama" placeholder="Nama">
                     <input type="email" name='email' placeholder="email">
                     <textarea name="pesan" id="" cols="30" rows="10" placeholder="Pesan"></textarea>
@@ -105,5 +105,8 @@
     <div id="footer">
         <p>&copy; Misbahul Huda 2020</p>
     </div>
+
+
+    <script src="folio.js"></script>
 </body>
 </html>

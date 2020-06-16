@@ -34,7 +34,7 @@
 
 
     <div class="content">
-        <div class="panah_box panah_box_kr"> < </div>
+        <div class="panah_box panah_box_kr" onclick="ganti_sebelum();"> < </div>
 
             <div id="karya_box">
 
@@ -44,20 +44,20 @@
                 </div>
 
                 <div id="karya_box_knn">
-                   <img src="assets/bg.jpg" alt="">
+                   <img src="assets/bg.jpg" alt="" id="target_gambar">
                 </div>
 
             </div>
 
-        <div class="panah_box panah_box_knn"> > </div>
+        <div class="panah_box" onclick="ganti_berikut();"> > </div>
 
 
         <div class="clear"></div>
 
         <div id="karya_lain">
-            <img src="assets/bg.jpg" alt="">
-            <img src="assets/bg.jpg" alt="">
-            <img src="assets/bg.jpg" alt="">
+            <img src="assets/bg.jpg" alt="" onclick="ganti_gambar(this);" class="0">
+            <img src="assets/2.jpg" alt="" onclick="ganti_gambar(this);" class="1">
+            <img src="assets/3.jpg" alt="" onclick="ganti_gambar(this);" class="2">
         </div>
 </div>
   
@@ -66,5 +66,9 @@
     <div id="footer">
         <p>&copy; Misbahul Huda 2020</p>
     </div>
+
+
+    <script src="folio.js"></script>
+
 </body>
 </html>
